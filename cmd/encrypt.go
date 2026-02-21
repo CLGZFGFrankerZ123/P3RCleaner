@@ -16,7 +16,7 @@ var encryptCmd = &cobra.Command{
 allowing it to be used on Steam.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		if len(args) < 1 || len(args) > 1 {
-			fmt.Println("Usage: P3RCrypt encrypt <filename>")
+			fmt.Println("Usage: P3RCleaner encrypt <filename>")
 			os.Exit(1)
 		}
 

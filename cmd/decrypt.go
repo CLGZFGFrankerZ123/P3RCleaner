@@ -15,7 +15,7 @@ var decryptCmd = &cobra.Command{
 allowing it to be used on Xbox/Game Pass.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		if len(args) < 1 || len(args) > 1 {
-			fmt.Println("Usage: P3RCrypt decrypt <filename>")
+			fmt.Println("Usage: P3RCleaner decrypt <filename>")
 			os.Exit(1)
 		}
 

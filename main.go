@@ -1,6 +1,6 @@
 package main
 
-import "P3RCrypt/cmd"
+import "P3RCleaner/cmd"
 
 func main() {
 	cmd.Execute()

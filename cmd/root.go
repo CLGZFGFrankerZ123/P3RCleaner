@@ -11,11 +11,11 @@ const encKey = "ae5zeitaix1joowooNgie3fahP5Ohph"
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "P3RCrypt",
-	Short: "A simple tool to encrypt and decrypt Persona 3 Reload save files.",
+	Use:   "P3RCleaner",
+	Short: "A simple tool to encrypt, decrypt, and remove DLC from Persona 3 Reload save files.",
 	Long: `Save files for Persona 3 Reload are unencrypted on the Microsoft Store version of the game,
 but encrypted on the Steam version. This tool allows you to encrypt or decrypt save files to facilitate
-cross-platform save file usage.`,
+cross-platform save file usage, as well as remove DLC flags from your save files.`,
 }
 
 // Execute adds all child commands to the root command and sets flags appropriately.

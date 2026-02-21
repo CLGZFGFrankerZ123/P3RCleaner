@@ -1,4 +1,4 @@
-module P3RCrypt
+module P3RCleaner
 
 go 1.22.0
 
