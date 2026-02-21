@@ -41,7 +41,7 @@ jobs:
           prerelease: false
 
       - name: Upload Release Asset (Windows)
-        id: upload-release-asset
+        id: upload-release-asset-windows
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -51,7 +51,7 @@ jobs:
           asset_name: P3RCleaner.exe
           asset_content_type: application/vnd.microsoft.portable-executable
 
-      - name: Upload Release Asset Linux
+      - name: Upload Release Asset (Linux)
         id: upload-release-asset-linux
         uses: actions/upload-release-asset@v1
         env:
