@@ -1,13 +1,15 @@
-# P3RCrypt
+# P3RCleaner
 
-P3RCrypt is a simple tool to encrypt and decrypt Persona 3 Reload save files. Save files for Persona 3 Reload are unencrypted on the Microsoft Store version of the game, but encrypted on the Steam version. This tool allows you to encrypt or decrypt save files to facilitate cross-platform save file usage.
+P3RCleaner is a simple command-line tool to remove DLC flags from any Persona 3 Reload save file. It is forked from and retains all functionality of [P3RCrypt](https://github.com/camohiddendj/P3RCrypt) by camohiddendj.
 
 ### Usage
-1. Navigate to the [releases page](https://github.com/camohiddendj/P3RCrypt/releases) and download the latest release.
-2. Open a command prompt and navigate to your downloads folder.
-3. Run one of the following commands to encrypt or decrypt a save file:
-   - `P3RCrypt.exe encrypt "path\to\savefile"`
-   - `P3RCrypt.exe decrypt "path\to\savefile"`
+1. Navigate to the [releases page](https://github.com/CLGZFGFrankerZ123/P3RCleaner/releases) and download the latest release.
+2. Move move the downloaded P3RCleaner prgram to your P3R save folder. (See below for details.)
+3. Open your command prompt (Windows) or terminal (Linux) in the save folder.
+4. Run one of the following commands:
+   - `P3RCleaner.exe patch` (Steam, Windows)
+   - `P3RCleaner.exe ms <savefile>` (Microsoft Store/Gamepass)
+   - `./P3RCleaner patch` (Steam, Linux)
 
 ### Save File Locations
 
@@ -17,7 +19,7 @@ Depending on your platform, your Persona 3 Reload save files can be found in the
 - Steam: `%APPDATA%\\SEGA\\P3R\\Steam\\<user-id>\\`
 - Steam Play (Linux): `<Steam-folder>/steamapps/compatdata/2161700/pfx/`
 
-If you're having trouble finding your Microsoft Store save files, you can use a tool such as [GPSaveConverter](https://github.com/Fr33dan/GPSaveConverter) to make figuring out the proper names a bit easier. However, we are planning on implementing our own method in a future release.
+If you're having trouble finding your Microsoft Store save files, you can use a tool such as [GPSaveConverter](https://github.com/Fr33dan/GPSaveConverter) to make figuring out the proper names a bit easier.
 
 ### Built With
 - [Go](https://golang.org/) - The programming language used
@@ -28,4 +30,5 @@ This project is licensed under the MIT License - see the [LICENSE](../LICENSE) f
 
 ### Acknowledgments
 - [illusion0001](https://illusion0001.com/) for the original [P3R-Save-EnDecryptor](https://github.com/illusion0001/P3R-Save-EnDecryptor) tool 
+- [camohiddendj](https://github.com/camohiddendj) for [P3RCrypt](https://github.com/camohiddendj/P3RCrypt), which this program is forked from.
 - Atlus for creating such a great game
